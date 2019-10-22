@@ -1,0 +1,9 @@
+﻿  BookAppointmentDlg.cpp
+  BookAppointDlg.cpp
+c:\users\ak068047\documents\visual studio 2015\projects\bookappoint\bookappoint\bookappointdlg.cpp(812): warning C4101: 'iEndMinuteDB': unreferenced local variable
+c:\users\ak068047\documents\visual studio 2015\projects\bookappoint\bookappoint\bookappointdlg.cpp(812): warning C4101: 'iEndHourDB': unreferenced local variable
+  Generating Code...
+  Skipping... (no relevant changes detected)
+  LoginDlg.cpp
+  BookAppoint.vcxproj -> C:\Users\AK068047\Documents\Visual Studio 2015\Projects\BookAppoint\Debug\BookAppoint.exe
+  BookAppoint.vcxproj -> C:\Users\AK068047\Documents\Visual Studio 2015\Projects\BookAppoint\Debug\BookAppoint.pdb (Partial PDB)

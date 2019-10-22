@@ -1,0 +1,737 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+#include "verrsrc.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "#include ""verrsrc.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#include ""res\\BookAppoint.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""      // Standard components\r\n"
+    "#if !defined(_AFXDLL)\r\n"
+    "#include ""afxprint.rc""        // printing/print preview resources\r\n"
+    "#include ""afxribbon.rc""        // MFC ribbon and control bar resources\r\n"
+    "#endif\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\BookAppoint.ico"
+
+IDR_BookAppointTYPE     ICON                    "res\\BookAppointDoc.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+IDR_MAINFRAME_256       BITMAP                  "res\\Toolbar256.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_MAINFRAME_256 TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        POPUP "&Toolbars and Docking Windows"
+        BEGIN
+            MENUITEM "<placeholder>",               ID_VIEW_TOOLBAR
+        END
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        POPUP "&Application Look"
+        BEGIN
+            MENUITEM "Windows &2000",               ID_VIEW_APPLOOK_WIN_2000
+            MENUITEM "Office &XP",                  ID_VIEW_APPLOOK_OFF_XP
+            MENUITEM "&Windows XP",                 ID_VIEW_APPLOOK_WIN_XP
+            MENUITEM "Office 200&3",                ID_VIEW_APPLOOK_OFF_2003
+            MENUITEM "Visual Studio 200&5",         ID_VIEW_APPLOOK_VS_2005
+            MENUITEM "Visual Studio 200&8",         ID_VIEW_APPLOOK_VS_2008
+            POPUP "Office 200&7"
+            BEGIN
+                MENUITEM "&Blue Style",                 ID_VIEW_APPLOOK_OFF_2007_BLUE
+                MENUITEM "B&lack Style",                ID_VIEW_APPLOOK_OFF_2007_BLACK
+                MENUITEM "&Silver Style",               ID_VIEW_APPLOOK_OFF_2007_SILVER
+                MENUITEM "&Aqua Style",                 ID_VIEW_APPLOOK_OFF_2007_AQUA
+            END
+        END
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About BookAppoint...",       ID_APP_ABOUT
+    END
+END
+
+IDR_POPUP_EDIT MENU
+BEGIN
+    POPUP "Edit"
+    BEGIN
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+END
+
+IDR_HELP_MENU MENU
+BEGIN
+    MENUITEM "&About BookAppoint...",       ID_APP_ABOUT
+END
+
+IDR_THEME_MENU MENU
+BEGIN
+    MENUITEM "Office 2007 (&Blue Style)",   ID_VIEW_APPLOOK_OFF_2007_BLUE
+    MENUITEM "Office 2007 (B&lack Style)",  ID_VIEW_APPLOOK_OFF_2007_BLACK
+    MENUITEM "Office 2007 (&Silver Style)", ID_VIEW_APPLOOK_OFF_2007_SILVER
+    MENUITEM "Office 2007 (&Aqua Style)",   ID_VIEW_APPLOOK_OFF_2007_AQUA
+    MENUITEM "Win&dows 7",                  ID_VIEW_APPLOOK_WINDOWS_7
+END
+
+IDR_MAIN_MENU MENU
+BEGIN
+    MENUITEM "Book Appointment",            ID_BOOKAPPOINTMENT
+    MENUITEM "Registration",                ID_REGISTRATION
+    MENUITEM "Modify/Update",               ID_MODIFY_UPDATE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About BookAppoint"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "BookAppoint, Version 1.0",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2019",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "OK",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_BOOKAPPOINT_LOGIN DIALOGEX 0, 0, 309, 137
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Login"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_USERNAME,74,33,119,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PASSWORD,74,55,120,14,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Login",IDLOGIN,198,116,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,252,116,50,14
+    LTEXT           "Username:",IDC_STATIC,30,36,36,8
+    LTEXT           "Password:",IDC_STATIC,30,57,34,8
+END
+
+IDD_BOOKAPPOINT_REGISTRATION DIALOGEX 0, 0, 371, 212
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Patient Registration"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_PATIENT_NAME,103,22,194,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_DATETIMEPICKER_DOB,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,103,43,100,15
+    COMBOBOX        IDC_COMBO_GENDER,103,67,36,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_COUNTRY_CODE,103,89,36,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_CONTACT_NUMBER,212,89,85,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ADDRESS,103,111,193,63,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Confirm",IDCONFIRM,251,191,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,314,191,50,14
+    LTEXT           "Patient Name:*",IDC_STATIC,47,25,50,8
+    LTEXT           "Date of Birth:*",IDC_STATIC,48,49,48,8
+    LTEXT           "Gender:*",IDC_STATIC,48,71,31,8
+    LTEXT           "Country Code:*",IDC_STATIC,48,92,52,8
+    LTEXT           "Contact Number:*",IDC_STATIC,151,92,60,8
+    LTEXT           "Address:*",IDC_STATIC,48,113,34,8
+END
+
+IDD_BOOKAPPOINT_MODIFY_UPDATE DIALOGEX 0, 0, 771, 353
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Modify/Update Data"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Date of Birth",IDC_RADIO_SEARCH_MODIFY_DOB,"Button",BS_AUTORADIOBUTTON,41,20,57,10
+    CONTROL         "Contact Number",IDC_RADIO_SEARCH_MODIFY_CONTACT_NUMBER,
+                    "Button",BS_AUTORADIOBUTTON,41,36,68,10
+    CONTROL         "Name",IDC_RADIO_SEARCH_MODIFY_NAME,"Button",BS_AUTORADIOBUTTON,41,51,34,10
+    CONTROL         "All",IDC_RADIO_SEARCH_MODIFY_ALL,"Button",BS_AUTORADIOBUTTON,41,66,23,10
+    CONTROL         "",IDC_DATETIMEPICKER_SEARCH_MODIFY_DOB,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,14,122,100,15
+    COMBOBOX        IDC_COMBO_SEARCH_MODIFY_COUNTRY_CODE,15,198,34,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_SEARCH_MODIFY_CONTACT_NUMBER,15,233,125,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SEARCH_MODIFY_PATIENT_NAME,15,295,125,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Search",IDC_BUTTON_SEARCH_MODIFY_SEARCH,225,332,50,14
+    PUSHBUTTON      "Edit",ID_BUTTON_SEARCH_MODIFY_EDIT,651,332,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,714,332,50,14
+    PUSHBUTTON      "Reset",IDC_BUTTON_SEARCH_MODIFY_RESET,159,332,50,14
+    CONTROL         "",IDC_LIST_MODIFY_SEARCH_OUTPUT,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,160,7,604,314
+    GROUPBOX        "Search By",IDC_STATIC,7,7,141,78
+    GROUPBOX        "Search by DOB",IDC_STATIC,7,94,141,69
+    GROUPBOX        "Search by Contact Number",IDC_STATIC,7,173,141,90
+    GROUPBOX        "Search by Name",IDC_STATIC,7,269,141,52
+    LTEXT           "Date of Birth:",IDC_STATIC,15,106,44,8
+    LTEXT           "Contry Code:",IDC_STATIC,15,185,44,8
+    LTEXT           "Patient Name:",IDC_STATIC,16,281,46,8
+    LTEXT           "Contact Number:",IDC_STATIC,15,217,56,8
+END
+
+IDD_BOOKAPPOINT_MODIFY_UPDATE_ONCLICKEDEDITBUTTON DIALOGEX 0, 0, 375, 246
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit Details"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_PATIENT_NAME,113,31,194,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_DATETIMEPICKER_DOB,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,113,52,100,15
+    COMBOBOX        IDC_COMBO_GENDER,113,76,36,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_COUNTRY_CODE,113,98,36,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_CONTACT_NUMBER,221,98,85,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ADDRESS,113,119,193,63,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Confirm",IDCONFIRM,254,225,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,318,225,50,14
+    LTEXT           "Patient Name:*",IDC_STATIC,57,34,50,8
+    LTEXT           "Date of Birth:*",IDC_STATIC,57,58,48,8
+    LTEXT           "Gender:*",IDC_STATIC,57,79,31,8
+    LTEXT           "Country Code:*",IDC_STATIC,57,101,52,8
+    LTEXT           "Contact Number:*",IDC_STATIC,161,101,60,8
+    LTEXT           "Address:*",IDC_STATIC,57,122,34,8
+END
+
+IDD_BOOKAPPOINT DIALOGEX 0, 0, 929, 549
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TRANSPARENT
+CAPTION "BookAppoint"
+MENU IDR_MAIN_MENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_MONTHCALENDAR_VIEW_APPOINTMENTS,"SysMonthCal32",MCS_WEEKNUMBERS | WS_TABSTOP,7,7,915,105,WS_EX_DLGMODALFRAME | WS_EX_TRANSPARENT
+    CONTROL         "Doctor ID",IDC_RADIO_VIEW_APPOINTMENTS_DOCTOR_ID,"Button",BS_AUTORADIOBUTTON,27,145,47,10
+    CONTROL         "Patient ID",IDC_RADIO_VIEW_APPOINTMENTS_PATIENT_ID,
+                    "Button",BS_AUTORADIOBUTTON,27,162,48,10
+    CONTROL         "Date Interval",IDC_RADIO_VIEW_APPOINTMENTS_DATE_INTERVAL,
+                    "Button",BS_AUTORADIOBUTTON,28,179,59,10
+    CONTROL         "Time Interval",IDC_RADIO_VIEW_APPOINTMENTS_TIME_INTERVAL,
+                    "Button",BS_AUTORADIOBUTTON,28,195,58,10
+    EDITTEXT        IDC_EDIT_VIEW_APPOINTMENTS_DOCTOR_ID,57,283,96,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_VIEW_APPOINTMENTS_PATIENT_ID,55,332,98,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_DATETIMEPICKER_VIEW_APPOINTMENTS_START_DATE,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,42,380,111,15
+    CONTROL         "",IDC_DATETIMEPICKER_VIEW_APPOINTMENTS_END_DATE,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,42,397,111,15
+    CONTROL         "",IDC_DATETIMEPICKER_VIEW_APPOINTMENTS_START_TIME,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,42,446,110,15
+    CONTROL         "",IDC_DATETIMEPICKER_VIEW_APPOINTMENTS_END_TIME,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,42,464,110,15
+    PUSHBUTTON      "Seen",IDC_BUTTON_MARK_AS_SEEN,709,527,50,14
+    PUSHBUTTON      "No Show",IDC_BUTTON_MARK_AS_NO_SHOW,766,527,67,14
+    PUSHBUTTON      "Cancel Appointment",IDC_CANCEL_APPOINTMENT,840,527,82,14
+    DEFPUSHBUTTON   "Search",IDSEARCH,65,527,50,14
+    CONTROL         "",IDC_LIST_VIEW_APPOINTMENTS,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,180,119,742,374
+    GROUPBOX        "Search by:",IDC_STATIC,7,115,162,103
+    GROUPBOX        "Search by Doctor ID:",IDC_STATIC,7,222,162,91
+    LTEXT           "Doctor ID:",IDC_STATIC,15,283,34,8
+    GROUPBOX        "Search by Patient ID:",IDC_STATIC,7,315,161,47
+    LTEXT           "Patient ID:",IDC_STATIC,14,334,36,8
+    GROUPBOX        "Search by Date interval:",IDC_STATIC,7,364,161,60
+    LTEXT           "From:",IDC_STATIC,17,380,20,8
+    LTEXT           "To:",IDC_STATIC,17,400,12,8
+    GROUPBOX        "Search by Time Interval:",IDC_STATIC,7,428,161,64
+    LTEXT           "From:",IDC_STATIC,17,448,20,8
+    LTEXT           "To:",IDC_STATIC,17,467,12,8
+    COMBOBOX        IDC_COMBO_LIST_DEPARTMENT,57,246,96,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Department:",IDC_STATIC,14,247,42,8
+    PUSHBUTTON      "List Doctors",IDC_BUTTON_LIST_DOCTORS,57,263,55,14
+    PUSHBUTTON      "Add",IDC_BUTTON_ADD_DOCTOR,118,263,35,14
+    PUSHBUTTON      "Clear Filter",IDC_BUTTON_CLEAR_FILTER,7,527,50,14
+    CONTROL         "All Appointments",IDC_RADIO_VIEW_APPOINTMENTS_All,
+                    "Button",BS_AUTORADIOBUTTON,27,130,69,10
+END
+
+IDD_BOOKAPPOINTMENT_DLG DIALOGEX 0, 0, 635, 168
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Book Appointment"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_APPOINTMENT_DATE,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,43,14,100,15
+    CONTROL         "",IDC_APPOINTMENT_START_TIME,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,43,34,100,15
+    CONTROL         "",IDC_APPOINTMENT_END_TIME,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,168,33,100,15
+    COMBOBOX        IDC_COMBO_SELECT_DEPARTMENT,68,55,87,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "List Doctors",IDC_BUTTON_LIST_DOCTORS,172,54,50,14
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,276,7,352,128
+    PUSHBUTTON      "Add",IDC_ADD_DOCTOR_ID,236,54,32,14
+    EDITTEXT        IDC_EDIT_DOCTOR_ID,68,75,109,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_APPOINTMENT_LOCATION,217,75,49,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PATIENT_ID,67,96,110,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SUBJECT_LINE,67,116,200,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,512,147,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,578,147,50,14
+    LTEXT           "Date:*",IDC_STATIC,18,18,23,8
+    LTEXT           "From:*",IDC_STATIC,17,37,24,8
+    LTEXT           "To:*",IDC_STATIC,151,36,16,8
+    LTEXT           "Department:",IDC_STATIC,17,57,42,8
+    LTEXT           "Doctor ID:*",IDC_STATIC,18,78,38,8
+    LTEXT           "Patient ID:*",IDC_STATIC,17,99,40,8
+    LTEXT           "Subject Line:*",IDC_STATIC,17,118,46,8
+    LTEXT           "Location:*",IDC_STATIC,182,78,34,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "BookAppoint"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "BookAppoint.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "BookAppoint.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_BOOKAPPOINT_LOGIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 130
+    END
+
+    IDD_BOOKAPPOINT_REGISTRATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 364
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 205
+    END
+
+    IDD_BOOKAPPOINT_MODIFY_UPDATE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 764
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 346
+    END
+
+    IDD_BOOKAPPOINT_MODIFY_UPDATE_ONCLICKEDEDITBUTTON, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 368
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 239
+    END
+
+    IDD_BOOKAPPOINT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 922
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 541
+    END
+
+    IDD_BOOKAPPOINTMENT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 628
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 161
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_BOOKAPPOINT_LOGIN AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_BOOKAPPOINT_REGISTRATION AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_BOOKAPPOINT_MODIFY_UPDATE AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_BOOKAPPOINT_MODIFY_UPDATE_ONCLICKEDEDITBUTTON AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_BOOKAPPOINT AFX_DIALOG_LAYOUT
+BEGIN
+    0,
+    0, 0, 100, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    100, 100, 0, 0,
+    100, 100, 0, 0,
+    100, 100, 0, 0,
+    0, 100, 0, 0,
+    0, 0, 100, 100,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 100, 0, 0,
+    0, 0, 0, 0
+END
+
+IDD_BOOKAPPOINTMENT_DLG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "BookAppoint"
+    IDR_BookAppointTYPE     "\nBookAppoint\nBookAppoint\n\n\nBookAppoint.Document\nBookAppoint.Document"
+    ID_WINDOW_MANAGER       "&Windows..."
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "BookAppoint"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle Status Bar"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_STATUS_PANE1        "Pane 1"
+    IDS_STATUS_PANE2        "Pane 2"
+    IDS_TOOLBAR_STANDARD    "Standard"
+    IDS_TOOLBAR_CUSTOMIZE   "Customize..."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_EDIT_MENU           "Edit"
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#include "res\BookAppoint.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"      // Standard components
+#if !defined(_AFXDLL)
+#include "afxprint.rc"        // printing/print preview resources
+#include "afxribbon.rc"        // MFC ribbon and control bar resources
+#endif
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
